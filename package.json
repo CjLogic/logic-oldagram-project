@@ -1,0 +1,15 @@
+{
+    "name": "logic-fakeagram",
+    "version": "1.0.0",
+    "description": "Instagram Clone Project",
+    "scripts": {
+      "start": "vite",
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "dependencies": {
+      "vite": "latest"
+    },
+    "devDependencies": {}
+  }

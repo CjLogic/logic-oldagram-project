@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Oldagram-Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logo.png" class="image__logo" />
+        <img src="images/porfolio.jpg" alt="Cj portrait" class="header__img" />
+      </header>
+
+      <main class="main">
+        <section class="section__one">
+          <div class="profile">
+            <img
+              src="images/avatar-ducreux.jpg"
+              alt="Ducreux portrait"
+              class="section__one--img"
+            />
+            <div class="">
+              <p class="name">Joseph Ducreux</p>
+              <p class="location">Paris, France</p>
+            </div>
+          </div>
+          <img
+            src="images/post-ducreux.jpg"
+            alt="Main image picture"
+            class="main__img"
+          />
+        </section>
+
+        <section class="section__two">
+          <div class="icons">
+            <button onclick="incrementLikeCounter()" id="likeBtn">
+              <img
+                src="images/icon-heart.png"
+                alt="Heart-icon"
+                class="heart-icon"
+              />
+            </button>
+            <button onclick="commentBtn()" id="comment-icon">
+              <img
+                src="images/icon-comment.png"
+                alt="comment-icon"
+                class="comment-icon"
+              />
+            </button>
+            <button>
+              <img src="images/icon-dm.png" alt="dm-icon" class="dm-icon" />
+            </button>
+          </div>
+          <p id="like">15,137 likes</p>
+          <ul type="text" class="username" id="comment-list">
+            <span>jd1735</span>
+            gm friends! which coin are YOU stacking up today?? post below and
+            WAGMI!
+          </ul>
+          <div class="comment">
+            <button id="show-comment-section"></button>
+            <div id="comment-section" class="hidden">
+              <textarea
+                id="comment-input"
+                placeholder="Add a comment..."
+              ></textarea>
+              <button id="post">Post</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
